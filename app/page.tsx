@@ -9,31 +9,29 @@ export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [showContact, setShowContact] = useState(false);
   
-  const shots: Shot[] = useMemo(
-    () => [
-      { src: '/jm-mike/1I4A0111.jpg', alt: 'Look 1' },
-      { src: '/jm-mike/1I4A0211.jpg', alt: 'Look 2' },
-      { src: '/jm-mike/1I4A0271.jpg', alt: 'Look 3' },
-      { src: '/jm-mike/1I4A0303.jpg', alt: 'Look 4' },
-      { src: '/jm-mike/1I4A0363.jpg', alt: 'Look 5' },
-      { src: '/jm-mike/1I4A0453.jpg', alt: 'Look 6' },
-      { src: '/jm-mike/1I4A0507.jpg', alt: 'Look 7' },
-      { src: '/jm-mike/1I4A0925.jpg', alt: 'Look 8' },
-      { src: '/jm-mike/1I4A9779.jpg', alt: 'Look 9' },
-      { src: '/jm-mike/1I4A0088.jpg', alt: 'Look 10' },
-      { src: '/jm-mike/1I4A0103.jpg', alt: 'Look 11' },
-      { src: '/jm-mike/000014720036.jpg', alt: 'Look 12' },
-      { src: '/jm-mike/1I4A2488.JPG', alt: 'Look 13' },
-      { src: '/jm-mike/DSCF2961.JPG', alt: 'Look 14' },
-      { src: '/jm-mike/DSCF3008.JPG', alt: 'Look 15' },
-      { src: '/jm-mike/IMG_0519.PNG', alt: 'Look 16' },
-      { src: '/jm-mike/IMG_20250324_0006.JPG', alt: 'Look 18' },
-      { src: '/jm-mike/R0000797 2.jpg', alt: 'Look 19' },
-      { src: '/jm-mike/R0000818 2.jpg', alt: 'Look 20' },
-      { src: '/jm-mike/test for texture adder 2.PNG', alt: 'Look 21' },
-    ],
-    []
-  );
+const shots: Shot[] = useMemo(
+  () => [
+    { src: '/jm-mike/1I4A0111.jpg', alt: 'Look 1' },
+    { src: '/jm-mike/1I4A0211.jpg', alt: 'Look 2' },
+    { src: '/jm-mike/1I4A0271.jpg', alt: 'Look 3' },
+    { src: '/jm-mike/1I4A0303.jpg', alt: 'Look 4' },
+    { src: '/jm-mike/1I4A0363.jpg', alt: 'Look 5' },
+    { src: '/jm-mike/1I4A0453.jpg', alt: 'Look 6' },
+    { src: '/jm-mike/1I4A0507.jpg', alt: 'Look 7' },
+    { src: '/jm-mike/1I4A0925.jpg', alt: 'Look 8' },
+    { src: '/jm-mike/1I4A9779.jpg', alt: 'Look 9' },
+    { src: '/jm-mike/1I4A0088.jpg', alt: 'Look 10' },
+    { src: '/jm-mike/1I4A0103.jpg', alt: 'Look 11' },
+    { src: '/jm-mike/000014720036.jpg', alt: 'Look 12' },
+    { src: '/jm-mike/1I4A2488.JPG', alt: 'Look 13' },
+    { src: '/jm-mike/DSCF2961.JPG', alt: 'Look 14' },
+    { src: '/jm-mike/DSCF3008.JPG', alt: 'Look 15' },
+    { src: '/jm-mike/IMG_20250324_0006.JPG', alt: 'Look 16' },
+    { src: '/jm-mike/R0000797 2.jpg', alt: 'Look 17' },
+    { src: '/jm-mike/test for texture adder 2.PNG', alt: 'Look 18' },
+  ],
+  []
+);
 
   const handlePrevious = useCallback(() => {
     if (selectedIndex !== null) {
